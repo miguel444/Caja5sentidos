@@ -6,11 +6,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caja de los 5 Sentidos</title>
     <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="images/cake.png" />
+
 </head>
 
 <body>
 
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron" style="width: 100%;">
+                <i class='fas fa-volume-up' style="font-size: 36px;" id="icon"></i> <i class='far fa-eye' style="font-size: 36px;" id="icon-right-botton"></i>
+                <i class='far fa-handshake' style="font-size: 36px;" id="icon-left-top"></i><i class='fas fa-pizza-slice' style="font-size: 36px;" id="icon-left-botton"></i>
+                <i class='fas fa-seedling' style="font-size: 36px;" id="icon-left-center"></i>
+
+                <h1 class="display-4 text-center mb-4 font-weight-bold" style="text-transform: uppercase; font-family: Raleway;">Caja de los 5 sentidos</h1>
+                <p class=" lead text-center subtitle" style="font-family: cursive;"> Regalo especial para la persona más bonita del mundo!</p>
+                <hr class="my-4 ">
+                <p style="font-family: Raleway, sans-serif; font-size: 25px; "><i class='far fa-lightbulb'></i> A continuación se van a plantear una serie de retos relacionados con los cinco sentidos que deberás resolver hasta conseguir un código final, con el que podrás descubrir la sorpresa final. </p>
+
+            </div>
+
+
+        </div>
+
+        <!--<div id="button-continue"> <input type="button" class="font-weight-bold" value="Continuar..."></div>-->
+
+        <div class="content">
+            <a href="#cards">
+                <svg id="more-arrows">
+               
+                <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+                <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+                <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+              </svg></a>
+        </div>
+
+    </div>
+
+    <div id="preview">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="carta-box" id="cards11">
+                    <div id="flip-container">
+                        <div id="card1" class="carta">
+                            <div class="cara"><img src="images/carta-gusto-delante.png" width="200" height="250px"></div>
+                            <div class="cara detras">
+                                <img src="images/carta-gusto-detras.png" width="200" height="250px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="carta-box" id="cards2">
+                    <div id="flip-container">
+                        <div id="card3" class="carta">
+                            <div class="cara"><img src="images/carta-tacto-delante.png" width="200" height="250px"></div>
+                            <div class="cara detras">
+                                <img src="images/carta-tacto-detras.png" width="200" height="250px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="carta-box" id="cards5">
+                    <div id="flip-container">
+                        <div id="card4" class="carta">
+                            <div class="cara"><img src="images/carta-vista-delante.png" width="200" height="250px"></div>
+                            <div class="cara detras">
+                                <img src="images/carta-vista-detras.png" width="200" height="250px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" style="margin-top: 200px;">
+            <div class="col-md-4 col-sm-4" style="height: 150px;">
+                <div class="carta-box" id="cards">
+                    <div id="flip-container">
+                        <div id="card7" class="carta">
+                            <div class="cara"><img src="images/carta-oido-delante.png" width="200" height="250px"></div>
+                            <div class="cara detras">
+                                <img src="images/carta-oido-detras.png" width="200" height="250px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4 col-sm-4" style="left: -30px;top: 170px;">
+                <div class='container' style="height: 150px ; margin-bottom: 150px; text-align: center; border: solid 2px white; background-color: white; border-radius: 20px;">
+                    <label class="font-weight-bold" style="font-size: 38px;font-family: Raleway;"> Código final</label><br>
+                    <input type=" text " placeholder="Introduce el código final..." style="position: relative; width:100%; bottom: 0;border-radius: 4px; box-shadow: 4px 4px 17px 0 rgba(243, 238, 238, 0.904);
+                font-family: 'Roboto', sans-serif;border: solid 2px black;"><br>
+                    <img src="images/cake.png" height="40px" width="40px" style="margin-top: 10px;">
+
+                </div>
+            </div>
+
+            <div class=" col-md-4 col-sm-4 ">
+                <div class="carta-box " id="cards9 ">
+                    <div id="flip-container ">
+                        <div id="card8 " class="carta ">
+                            <div class="cara "><img src="images/carta-olfato-delante.png " width="200 " height="250px "></div>
+                            <div class="cara detras ">
+                                <img src="images/carta-olfato-detras.png" width="200 " height="250px ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="container" id="video" style="display: none;text-align: center;">
+
+
+        <div>
+            <input type="image" onclick="changeRegalo(this)" src="./images/caja-de-regalo.png" width="250" height="250">
+            <video width="270" height="200" controls style="display: none;border: solid 5px rgb(219, 141, 141);background-color: white;">
+            <source src="videos/Vídeo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+            <p style="font-size:xx-large;color: black;background-color: white;border-radius: 30px;margin-top: 30px;display: none;">Ginés Marín</p>
+        </div>
+
+
+        <div>
+            <input type="image" onclick="changeRegalo(this)" src="./images/caja-de-regalo.png" width="250" height="250">
+            <video width="270" height="200" controls style="display: none;border: solid 5px rgb(219, 141, 141);background-color: white;">
+            <source src="videos/escribano.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+            <p style="font-size:xx-large;color: black;background-color: white;border-radius: 30px;margin-top: 30px;display: none;">Manuel Escribano</p>
+
+        </div>
+
+        <div>
+            <input type="image" onclick="changeRegalo(this)" src="./images/caja-de-regalo.png" width="250" height="250">
+            <video width="270" height="200" controls style="display: none;border: solid 5px rgb(219, 141, 141);background-color: white;">
+            <source src="videos/adrian-de-torres.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+            <p style="font-size:xx-large;color: black;background-color: white;border-radius: 30px;margin-top: 30px;display: none;">Adrían de Torres</p>
+
+        </div>
+
+
+    </div>
+    <h1 id="message" style="font-family: Raleway;color: white;display: none;text-align: center;bottom: 150px;position: relative;font-size: 300% ;font-weight: 900;"> FELIZ CUMPLEAÑOS MI AMOR!! <i class="fas fa-heart"></i></h1>
+
+
+
+    <script>
+        function changeRegalo(target) {
+
+            target.style.display = 'none';
+            target.nextElementSibling.style.display = 'block'
+            target.nextElementSibling.nextElementSibling.style.display = 'block'
+
+
+        }
+    </script>
+
+
+
+
+
 </body>
-<script src="js/index.js"></script>
+<script src="js/index.js "></script>
 
 </html>
